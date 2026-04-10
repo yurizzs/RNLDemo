@@ -5,7 +5,7 @@ interface FloatingLabelInputProps {
   type: "text" | "date" | "password";
   name: string;
   value?: string | any;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   newLabelClassName?: string;
   labelClassName?: string;
   newInputClassName?: string;
@@ -17,7 +17,22 @@ interface FloatingLabelInputProps {
   errors?: string[];
 }
 
-const FloatingLabelInput: FC<FloatingLabelInputProps> = ({label, type, name, value, onChange, newLabelClassName, labelClassName, newInputClassName, inputClassName, required, autoFocus, disabled, readOnly, errors}) => {
+const FloatingLabelInput: FC<FloatingLabelInputProps> = ({
+  label,
+  type,
+  name,
+  value,
+  onChange,
+  newLabelClassName,
+  labelClassName,
+  newInputClassName,
+  inputClassName,
+  required,
+  autoFocus,
+  disabled,
+  readOnly,
+  errors,
+}) => {
   return (
     <>
       <div className="relative">
@@ -39,11 +54,9 @@ const FloatingLabelInput: FC<FloatingLabelInputProps> = ({label, type, name, val
           className={`${newLabelClassName ? newLabelClassName : `absolute text-sm text-body duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-left bg-neutral-primary px-2 peer-focus:px-2 peer-focus:text-fg-brand peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto inset-s-1 ${labelClassName}`}`}
         >
           {label}
-          {required && (
-          <span className="text-red-600">*</span>
-          )}
+          {required && <span className="text-red-600">*</span>}
         </label>
-        {errors && errors.length > 0  && (
+        {errors && errors.length > 0 && (
           <span className="text-red-600">{errors[0]}</span>
         )}
       </div>
