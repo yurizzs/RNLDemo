@@ -71,7 +71,7 @@ const AppHeader = () => {
                   </button>
                 </div>
                 <div
-                  className={`absolute right-8 top-9 min-w-[200px] z-50 ${isOpen ? "block" : "hidden"} my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-sm shadow-sm bg-neutral-primary-medium border border-default-medium rounded-base w-44`}
+                  className={`absolute right-8 top-9 min-w-50 z-50 ${isOpen ? "block" : "hidden"} my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-sm shadow-sm bg-neutral-primary-medium border border-default-medium rounded-base w-44`}
                   id="dropdown-user"
                 >
                   <div
