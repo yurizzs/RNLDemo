@@ -25,7 +25,7 @@ const GenderList = () => {
             </div>
             <div>
               <Link
-                to="#"
+                to="/gender/delete"
                 className="text-red-600 hover:underline font-medium "
               >
                 Delete
@@ -51,7 +51,7 @@ const GenderList = () => {
             </div>
             <div>
               <Link
-                to="#"
+                to="/gender/delete"
                 className="text-red-600 hover:underline font-medium "
               >
                 Delete
@@ -77,7 +77,7 @@ const GenderList = () => {
             </div>
             <div>
               <Link
-                to="#"
+                to="/gender/delete"
                 className="text-red-600 hover:underline font-medium "
               >
                 Delete
