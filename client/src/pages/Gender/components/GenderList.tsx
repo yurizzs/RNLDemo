@@ -14,7 +14,7 @@ const GenderList = () => {
       gender: "Male",
       action: (
         <>
-          <div className="gap-1">
+          <div className="flex justify-center gap-4">
             <div>
               <Link
                 to="/gender/edit"
@@ -40,7 +40,7 @@ const GenderList = () => {
       gender: "Female",
       action: (
         <>
-          <div className="gap-1">
+          <div className="flex justify-center gap-4">
             <div>
               <Link
                 to="/gender/edit"
@@ -66,7 +66,7 @@ const GenderList = () => {
       gender: "Prefer not to say",
       action: (
         <>
-          <div className="gap-1">
+          <div className="flex justify-center gap-4">
             <div>
               <Link
                 to="/gender/edit"
